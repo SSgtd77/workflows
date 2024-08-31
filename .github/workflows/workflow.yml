@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Password
-        run: echo '${{ secrets.PASSWORD }}'
+        run: echo '${{ secrets.PASSWORD_MAIN }}'
       - name: Print GitHub
         run: echo '${{ toJSON(github) }}'
   checkout:
